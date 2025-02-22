@@ -39,7 +39,7 @@ export default {
           DEFAULT: "#00ffff",
         },
         accent: "var(--dyn-gradient)",
-        background: "#0A0A20",
+        background: "#000018",
       },
       fontFamily: {
         ibm: ["IBM Plex Sans", ...defaultTheme.fontFamily.sans],

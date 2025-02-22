@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #0A0A20;
+  --background: #000018;
   --dyn-green-50: #eeffe4;
   --dyn-green-100: #d7ffc4;
   --dyn-green-200: #b2ff90;
