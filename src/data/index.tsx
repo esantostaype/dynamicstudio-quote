@@ -49,3 +49,44 @@ export const states: string[] = [
   "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", 
   "Wisconsin", "Wyoming"
 ]
+
+export const industry: string[] = [
+  "Fashion & Apparel",
+  "Electronics & Technology",
+  "Home & Furniture",
+  "Sports & Recreation",
+  "Beauty & Personal Care",
+  "Financial Services",
+  "Legal Services",
+  "Consulting",
+  "Real Estate",
+  "Marketing & Advertising",
+  "Medical Practice",
+  "Dental",
+  "Mental Health",
+  "Alternative Medicine",
+  "Fitness & Wellness",
+  "Restaurants & Cafes",
+  "Hotels & Lodging",
+  "Travel & Tourism",
+  "Events & Entertainment",
+  "Food Services",
+  "Schools & Universities",
+  "Professiional Training",
+  "Online Courses",
+  "Tutoring Services",
+  "Educational Technology",
+  "Consumer Goods",
+  "Industrial Equipment",
+  "Automotive",
+  "Electronics Manufacturing",
+  "Custom Manufacturing"
+]
+
+export const companySize: string[] = [
+  "Startup (1-10 Employes)", "Small Business (11-50 Employes)", "Medium Business (51-200 Employes)", "Large Business (200+ Employes)"
+]
+
+export const yearInBusiness: string[] = [
+  "1-2 Years", "3-5 Years", "5-10 Years", "More than 10 years"
+]
