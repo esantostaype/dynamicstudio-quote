@@ -4,7 +4,6 @@ import { Step } from '@/interfaces'
 
 interface Props {
   step: Step
-  index: number
   isActive: boolean
   isSuccess: boolean
   isLastStep: boolean

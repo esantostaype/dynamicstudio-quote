@@ -1,13 +1,30 @@
+import { CompanyProfile } from '@/interfaces';
 import * as Yup from 'yup'
 
-export const FormSchemaStep1 = Yup.object().shape({
-	q1: Yup.array()
-    .min(1, 'This field is required')
-    .required('This field is required'),
-	q2: Yup.string().required('This field is required'),
-	q3State: Yup.string().required('This field is required'),
-	q3City: Yup.string().required('This field is required')
-})
+export const CompanyProfileSchema: Record<
+  string,
+  Yup.ObjectSchema<Partial<CompanyProfile>>
+> = {
+  information: Yup.object().shape({
+    industry: Yup.string().required("Industry is required"),
+    companySize: Yup.string().required("Company Size is required"),
+    fullName: Yup.string().required("Full Name is required"),
+    email: Yup.string().email("Invalid email").required("Email is required"),
+    phone: Yup.string().nullable(),
+  }) as Yup.ObjectSchema<Partial<CompanyProfile>>,
+
+  projectGoals: Yup.object().shape({
+    projectGoals: Yup.string().required("Project Goals are required"),
+  }) as Yup.ObjectSchema<Partial<CompanyProfile>>,
+
+  knowledgeLevel: Yup.object().shape({
+    knowledgeLevel: Yup.string().required("Knowledge Level is required"),
+  }) as Yup.ObjectSchema<Partial<CompanyProfile>>,
+
+  additionalNotes: Yup.object().shape({
+    additionalNotes: Yup.string(),
+  }) as Yup.ObjectSchema<Partial<CompanyProfile>>,
+};
 
 export const FormSchemaStep2 = Yup.object().shape({
 	q4: Yup.string().required('This field is required'),

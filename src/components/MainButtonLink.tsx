@@ -1,6 +1,6 @@
 'use client'
+import { ArrowRight } from '@phosphor-icons/react'
 import { useRouter } from 'next-nprogress-bar'
-import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded'
 
 interface Props {
   label: string
@@ -16,7 +16,7 @@ export const MainButtonLink = ({ label, path }: Props) => {
       >
         { label }
         <div className='group-hover:ml-2 group-hover:-mr-2 transition-all duration-300 ease-in-out'>
-          <ArrowForwardRoundedIcon/>
+          <ArrowRight/>
         </div>
       </button>
   );

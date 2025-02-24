@@ -1,42 +1,49 @@
-import type { Step } from '@/interfaces'
-import { Briefcase, ClipboardText, CreditCard, Gear, ListChecks, Package, ShoppingBag  } from '@phosphor-icons/react'
+import type { Step, Tab } from '@/interfaces'
+import { Briefcase, ChartBar, ClipboardText, CreditCard, Gear, Info, ListChecks, Note, Package, ShoppingBag, Target  } from '@phosphor-icons/react'
 
 export const stepsData: Step[] = [
   {
     title: 'Company Profile',
-    icon: <Briefcase size={ 32 } weight="thin" color="currentColor" />,
+    icon: <Briefcase size={ 32 } weight="thin" />,
     path: '/company-profile'
   },
   {
     title: 'Project Scope',
-    icon: <Package size={ 32 } weight="thin" color="currentColor" />,
+    icon: <Package size={ 32 } weight="thin" />,
     path: '/project-scope'
   },
   {
     title: 'Features',
-    icon: <Gear size={ 32 } weight="thin" color="currentColor" />,
+    icon: <Gear size={ 32 } weight="thin" />,
     path: '/features'
   },
   {
     title: 'Requirements',
-    icon: <ClipboardText size={ 32 } weight="thin" color="currentColor" />,
+    icon: <ClipboardText size={ 32 } weight="thin" />,
     path: '/requirements'
   },
   {
     title: 'Summary',
-    icon: <ListChecks size={ 32 } weight="thin" color="currentColor" />,
+    icon: <ListChecks size={ 32 } weight="thin" />,
     path: '/summary'
   },
   {
     title: 'Payment Methods',
-    icon: <CreditCard size={ 32 } weight="thin" color="currentColor" />,
+    icon: <CreditCard size={ 32 } weight="thin" />,
     path: '/payment-methods'
   },
   {
     title: 'Check-out',
-    icon: <ShoppingBag size={ 32 } weight="thin" color="currentColor" />,
+    icon: <ShoppingBag size={ 32 } weight="thin" />,
     path: '/check-out'
   }
+]
+
+export const companyProfileTabs: Tab[] = [
+  { id: 'information', label: 'Information', icon: <Info size={ 20 } weight="light" /> },
+  { id: 'projectGoals', label: 'Project Goals', icon: <Target size={ 20 } weight="light" /> },
+  { id: 'knowledgeLevel', label: 'Knowledge Level', icon: <ChartBar size={ 20 } weight="light" /> },
+  { id: 'additionalNotes', label: 'Additional Notes', icon: <Note size={ 20 } weight="light" /> }
 ]
 
 export const states: string[] = [

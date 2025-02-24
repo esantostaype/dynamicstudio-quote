@@ -11,14 +11,13 @@ export const StepperList = () => {
     <ul className="flex items-start z-50 justify-between w-full">
       { stepsData.map(( step, index ) => {
         const isActive = pathname === step.path
-        const isSuccess = !!Cookies.get(`Step${ index + 1 }`)
+        const isSuccess = !!Cookies.get(`${ step.title }`)
         const isLastStep = index === stepsData.length - 1
 
         return (
           <StepperItem
             key={ index }
             step={ step }
-            index={ index }
             isActive={ isActive }
             isSuccess={ isSuccess }
             isLastStep={ isLastStep }

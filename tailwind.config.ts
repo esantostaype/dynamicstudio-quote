@@ -5,6 +5,7 @@ export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/templates/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -39,7 +40,7 @@ export default {
           DEFAULT: "#00ffff",
         },
         accent: "var(--dyn-gradient)",
-        background: "#000018",
+        background: "#0A0A20",
       },
       fontFamily: {
         ibm: ["IBM Plex Sans", ...defaultTheme.fontFamily.sans],
